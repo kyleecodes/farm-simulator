@@ -9,6 +9,7 @@ module.exports = {
       network_id: "*" // Match any network id
     },
   },
+  // this is how truffle will connect to React
   contracts_directory: './src/contracts/',
   contracts_build_directory: './src/abis/',
   compilers: {
