@@ -14,7 +14,12 @@ contract TokenFarm {
     mapping(address => bool) public hasStaked;
     mapping(address => bool) public isStaking;
 
+    // constructor gets called once and only once 
+    // arguments are addresses 
+    // every (state) variable needs a type, the types for these arguments are the contracts themselves
     constructor(DappToken _dappToken, DaiToken _daiToken) public {
+        // deploy mock token, dai token, and then finally token farm
+        // needs public visibility 
         dappToken = _dappToken;
         daiToken = _daiToken;
         owner = msg.sender;
